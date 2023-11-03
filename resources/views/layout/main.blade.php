@@ -14,15 +14,15 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-<@include('layout.header')
-<@include('layout.nav')
+@include('layout.header')
+@include('layout.nav')
 
 <main>
     @yield('content')
 </main>
 
 
-<@include('layout.footer')
+@include('layout.footer')
 
 
 <!-- core  -->

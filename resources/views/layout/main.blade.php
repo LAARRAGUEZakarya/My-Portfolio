@@ -3,8 +3,13 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with Meyawo landing page.">
-    <meta name="author" content="Devcrud">
+    <meta name="_token" content="{{ csrf_token() }}" />
+    <meta name="description" content="Start your project with me by visit my services and my work.">
+
+
+    <!-- Favicons -->
+    <link href="{{ asset('favicon.png') }}" rel="icon">
+
     <title>LAARRAGUE Zakarya Landing page</title>
     <!-- font icons -->
     <link rel="stylesheet" href="{{url('assets/vendors/themify-icons/css/themify-icons.css')}}">

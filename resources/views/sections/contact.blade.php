@@ -1,50 +1,24 @@
-   <!-- blog section -->
-   <section class="section" id="blog">
-    <!-- container -->
+ <!-- contact section -->
+ <section class="section" id="contact">
     <div class="container text-center">
-        <p class="section-subtitle">Recent Posts?</p>
-        <h6 class="section-title mb-6">Blog</h6>
-        <!-- blog-wrapper -->
-        <div class="blog-card">
-            <div class="blog-card-header">
-                <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+        <p class="section-subtitle">How can you communicate?</p>
+        <h6 class="section-title mb-5">Contact Me</h6>
+        <!-- contact form -->
+        <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-sm-6">
+                    <input type="email" class="form-control" placeholder="Enter Email"requried>
+                </div>
+                <div class="form-group col-sm-12">
+                    <textarea name="comment" id="comment" rows="6"   class="form-control" placeholder="Write Something"></textarea>
+                </div>
+                <div class="form-group col-sm-12 mt-3">
+                    <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                </div>
             </div>
-            <div class="blog-card-body">
-                <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
-
-                <p class="blog-card-caption">
-                    <a href="#">By: Admin</a>
-                    <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                    <a href="#"><i class="ti-comment"></i> 123</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-            </div>
-        </div><!-- end of blog wrapper -->
-
-        <!-- blog-wrapper -->
-        <div class="blog-card">
-            <div class="blog-card-header">
-                <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-            </div>
-            <div class="blog-card-body">
-                <h5 class="blog-card-title">Explicabo illo</h6>
-
-                <p class="blog-card-caption">
-                    <a href="#">By: Admin</a>
-                    <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                    <a href="#"><i class="ti-comment"></i> 264</a>
-                </p>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
-
-                <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-            </div>
-        </div><!-- end of blog wrapper -->
-
+        </form><!-- end of contact form -->
     </div><!-- end of container -->
-</section><!-- end of blog section -->
+</section><!-- end of contact section -->

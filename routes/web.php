@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PdfController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,4 @@ use App\Http\Controllers\PdfController;
 Route::get('/', function () {
     return view('index');
 });
-
-Route::get('/download-pdf', [PdfController::class, 'download'])->name('download');
 

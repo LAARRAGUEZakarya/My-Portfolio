@@ -23,7 +23,24 @@ class BlogResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('title')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('user_id')
+                    ->required()
+                    ->numeric(),
+                Forms\Components\TextInput::make('description')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\FileUpload::make('image')
+                    ->image()
+                    ->required(),
+                Forms\Components\TextInput::make('like_id')
+                    ->required()
+                    ->numeric(),
+                Forms\Components\TextInput::make('comment_id')
+                    ->required()
+                    ->numeric(),
             ]);
     }
 
@@ -31,6 +48,20 @@ class BlogResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('title')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('user_id')
+                    ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('image'),
+                Tables\Columns\TextColumn::make('like_id')
+                    ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('comment_id')
+                    ->numeric()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

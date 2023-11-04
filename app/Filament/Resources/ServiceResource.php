@@ -23,7 +23,15 @@ class ServiceResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('name')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('description')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\FileUpload::make('image')
+                    ->image()
+                    ->required(),
             ]);
     }
 
@@ -31,6 +39,11 @@ class ServiceResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('description')
+                    ->searchable(),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

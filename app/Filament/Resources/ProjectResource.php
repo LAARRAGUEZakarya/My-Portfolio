@@ -23,7 +23,15 @@ class ProjectResource extends Resource
     {
         return $form
             ->schema([
-                //
+                Forms\Components\TextInput::make('category_id')
+                    ->required()
+                    ->numeric(),
+                Forms\Components\TextInput::make('name')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('url')
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
@@ -31,6 +39,13 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('category_id')
+                    ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('name')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('url')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

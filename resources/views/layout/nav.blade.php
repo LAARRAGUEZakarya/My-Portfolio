@@ -21,6 +21,9 @@
             <li class="item">
                 <a class="link" href="#contact">Contact</a>
             </li>
+            <li class="item">
+                <a class="link" href="/admin">Dashboard</a>
+            </li>
 
         </ul>
         <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">

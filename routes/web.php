@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/download_cv', [PdfController::class,'download'])->name('download_Cv');

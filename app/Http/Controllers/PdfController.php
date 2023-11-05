@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class PdfController extends Controller
 {
+
     public function download()
     {
         $file = public_path('cv/CV.pdf');

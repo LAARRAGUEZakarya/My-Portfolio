@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->integer('category_id');
+            $table->foreignId('category_id')->constrained('categories')->onDelete('cascade');
             $table->string('name');
             $table->string('url');
             $table->timestamps();

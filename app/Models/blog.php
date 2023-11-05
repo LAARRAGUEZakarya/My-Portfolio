@@ -10,17 +10,13 @@ class blog extends Model
     use HasFactory;
     protected $fillable = [
         'title',
-        'user_id',
         'description',
         'image',
         'like_id',
         'comment_id'
     ] ;
 
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+
     public function like()
     {
         return $this->hasMany(Like::class);

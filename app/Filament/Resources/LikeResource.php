@@ -17,7 +17,7 @@ class LikeResource extends Resource
 {
     protected static ?string $model = Like::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-hand-thumb-up';
 
     public static function form(Form $form): Form
     {
@@ -67,14 +67,14 @@ class LikeResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -83,5 +83,5 @@ class LikeResource extends Resource
             'view' => Pages\ViewLike::route('/{record}'),
             'edit' => Pages\EditLike::route('/{record}/edit'),
         ];
-    }    
+    }
 }

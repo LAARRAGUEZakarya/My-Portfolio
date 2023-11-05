@@ -17,7 +17,7 @@ class BlogResource extends Resource
 {
     protected static ?string $model = Blog::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
     public static function form(Form $form): Form
     {
@@ -69,14 +69,14 @@ class BlogResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -85,5 +85,5 @@ class BlogResource extends Resource
             'view' => Pages\ViewBlog::route('/{record}'),
             'edit' => Pages\EditBlog::route('/{record}/edit'),
         ];
-    }    
+    }
 }

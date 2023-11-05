@@ -17,7 +17,7 @@ class ServiceResource extends Resource
 {
     protected static ?string $model = Service::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-group';
 
     public static function form(Form $form): Form
     {
@@ -69,14 +69,14 @@ class ServiceResource extends Resource
                 Tables\Actions\CreateAction::make(),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
             //
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -85,5 +85,5 @@ class ServiceResource extends Resource
             'view' => Pages\ViewService::route('/{record}'),
             'edit' => Pages\EditService::route('/{record}/edit'),
         ];
-    }    
+    }
 }

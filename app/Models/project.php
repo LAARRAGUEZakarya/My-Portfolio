@@ -11,6 +11,7 @@ class project extends Model
 
     protected $fillable = [
         'category_id',
+        'image',
         'name',
         'url',
     ];

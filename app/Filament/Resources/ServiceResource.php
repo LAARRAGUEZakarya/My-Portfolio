@@ -19,6 +19,11 @@ class ServiceResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-group';
 
+
+    protected static ?string $navigationLabel = 'Services';
+    protected static ?string $modelLabel = 'Services List';
+    protected static ?string $navigationGroup = 'Prjects management';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -31,7 +36,8 @@ class ServiceResource extends Resource
                     ->maxLength(255),
                 Forms\Components\FileUpload::make('image')
                     ->image()
-                    ->required(),
+                    ->required()
+                    ->columnSpanFull(),
             ]);
     }
 

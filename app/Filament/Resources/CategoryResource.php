@@ -16,16 +16,18 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-wallet';
-
+    protected static ?string $navigationLabel = 'Categories';
+    protected static ?string $modelLabel = 'Categories List';
+    protected static ?string $navigationGroup = 'Prjects management';
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)
+                    ->columnSpanFull(),
             ]);
     }
 

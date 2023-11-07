@@ -19,19 +19,36 @@ class ProjectResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-presentation-chart-bar';
 
+    protected static ?string $navigationLabel = 'Projects';
+    protected static ?string $modelLabel = 'Projects List';
+    protected static ?string $navigationGroup = 'Prjects management';
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('category_id')
+                Forms\Components\Section::make('Category Section')
+                ->description('Select the project category .')
+                ->schema([
+                    Forms\Components\TextInput::make('Category')
                     ->required()
                     ->numeric(),
-                Forms\Components\TextInput::make('name')
+                ]),
+                Forms\Components\Section::make('Project Info')
+                ->description('Put all project info in.')
+                ->schema([
+                    Forms\Components\TextInput::make('Name')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('url')
-                    ->required()
-                    ->maxLength(255),
+                    Forms\Components\TextInput::make('Url')
+                        ->required()
+                        ->maxLength(255),
+                    Forms\Components\FileUpload::make('Image')
+                        ->image()
+                        ->required()
+                        ->columnSpanFull(),
+                ]),
+
+
             ]);
     }
 

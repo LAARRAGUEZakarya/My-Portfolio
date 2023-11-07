@@ -18,6 +18,9 @@ class LikeResource extends Resource
     protected static ?string $model = Like::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-hand-thumb-up';
+    protected static ?string $navigationLabel = 'Likes';
+    protected static ?string $modelLabel = 'Likes List';
+    protected static ?string $navigationGroup = 'Blogs management';
 
     public static function form(Form $form): Form
     {

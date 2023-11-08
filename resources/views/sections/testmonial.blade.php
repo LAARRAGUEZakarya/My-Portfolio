@@ -24,7 +24,7 @@
                     </div>
                     <div class="testimonial-card-body">
                         <p class="testimonial-card-subtitle">I love FONDATIONAMANE! This is an amazing service and it has saved me and my small business so much time. I plan to use it for a long time to come</p>
-                        <h6 class="testimonial-card-title">EL MOTIAA Manal</h6>
+                        <h6 class="testimonial-card-title">E L MOTIAA Manal</h6>
                     </div>
                 </div>
             </div>

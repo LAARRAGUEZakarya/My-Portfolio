@@ -4,7 +4,7 @@
         <p class="section-subtitle">How Much I Charge ?</p>
         <h6 class="section-title mb-6">My Pricing</h6>
         <!-- row -->
-        <div class="pricing-wrapper">
+        <div class="pricing-wrapper" style="filter: blur(6px);">
             <div class="pricing-card">
                 <div class="pricing-card-header">
                     <img class="pricing-card-icon" src="assets/imgs/scooter.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">

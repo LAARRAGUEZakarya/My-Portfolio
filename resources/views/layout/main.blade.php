@@ -19,26 +19,34 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
-@include('layout.header')
-@include('layout.nav')
+    @include('layout.helper.loading')
+    @include('layout.header')
+    @include('layout.nav')
 
-<main>
-    @yield('content')
-</main>
-
-
-@include('layout.footer')
+    <main>
+        @yield('content')
+    </main>
 
 
-<!-- core  -->
-<script src="{{url('assets/vendors/jquery/jquery-3.4.1.js')}}"></script>
-<script src="{{url('assets/vendors/bootstrap/bootstrap.bundle.js')}}"></script>
+    @include('layout.footer')
 
-<!-- bootstrap 3 affix -->
-<script src="{{url('assets/vendors/bootstrap/bootstrap.affix.js')}}"></script>
+    <!-- JAVASCRIPT -->
+    @include('layout.helper.alerts')
 
-<!-- Meyawo js -->
-<script src="{{url('assets/js/meyawo.js')}}"></script>
+    <div id="Btn-whatssap">
+        <a href="https://wa.me/+212659901360" target="_blank">
+            <img src="assets/imgs/whatsapp.png" alt="whatssap" width="65px">
+        </a>
+    </div>
+    <!-- core  -->
+    <script src="{{url('assets/vendors/jquery/jquery-3.4.1.js')}}"></script>
+    <script src="{{url('assets/vendors/bootstrap/bootstrap.bundle.js')}}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{{url('assets/vendors/bootstrap/bootstrap.affix.js')}}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{{url('assets/js/meyawo.js')}}"></script>
 
 </body>
 </html>

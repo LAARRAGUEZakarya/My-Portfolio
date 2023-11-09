@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PdfController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/download_cv', [PdfController::class,'download'])->name('download_Cv');
+
+Route::post('/contactUs', [ContactController::class,'sendMail'])->name('sendMail');

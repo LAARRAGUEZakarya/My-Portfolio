@@ -21,10 +21,10 @@
                 <p>
                     Embarking on the full-stack developer journey has been enlightening. Beyond mastering various technologies,
                     I've learned the art of data analysis, problem-solving, and creating streamlined solutions.
-                     This field has molded me into a versatile problem-solver, where each project is a lesson in adaptability.
-                      It's not just about coding; it's about crafting efficient systems, understanding user needs,
-                      and applying design patterns to build robust applications. Every challenge is an opportunity to learn,
-                       making the full-stack development experience a dynamic and enriching journey.
+                    This field has molded me into a versatile problem-solver, where each project is a lesson in adaptability.
+                    It's not just about coding; it's about crafting efficient systems, understanding user needs,
+                    and applying design patterns to build robust applications. Every challenge is an opportunity to learn,
+                    making the full-stack development experience a dynamic and enriching journey.
                 </p>
 
                 <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>

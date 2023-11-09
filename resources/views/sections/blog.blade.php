@@ -7,40 +7,25 @@
         <!-- blog-wrapper -->
         <div class="blog-card">
             <div class="blog-card-header">
-                <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-            </div>
-            <div class="blog-card-body">
-                <h5 class="blog-card-title">Consectetur adipisicing elit</h6>
-
-                <p class="blog-card-caption">
-                    <a href="#">By: Admin</a>
-                    <a href="#"><i class="ti-heart text-danger"></i> 234</a>
-                    <a href="#"><i class="ti-comment"></i> 123</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium neque numquam mollitia modi quasi distinctio.</p>
-
-                <p><b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b></p>
-                <p>Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.</p>
-
-                <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
-            </div>
-        </div><!-- end of blog wrapper -->
-
-        <!-- blog-wrapper -->
-        <div class="blog-card">
-            <div class="blog-card-header">
                 <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
             </div>
             <div class="blog-card-body">
-                <h5 class="blog-card-title">Explicabo illo</h6>
+                <h5 class="blog-card-title">My gains as a programmer &nbsp;&nbsp;&nbsp;&nbsp; "&nbsp; تقدمين &nbsp;"</h6>
 
                 <p class="blog-card-caption">
-                    <a href="#">By: Admin</a>
-                    <a href="#"><i class="ti-heart text-danger"></i> 456</a>
-                    <a href="#"><i class="ti-comment"></i> 264</a>
+                    <a>By: Admin "me"</a>
+                    <a><i class="ti-heart text-danger"></i> 456</a>
+                    <a><i class="ti-comment"></i> 264</a>
                 </p>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim, vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae? Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.</p>
+                <p>
+                    Embarking on the full-stack developer journey has been enlightening. Beyond mastering various technologies,
+                    I've learned the art of data analysis, problem-solving, and creating streamlined solutions.
+                     This field has molded me into a versatile problem-solver, where each project is a lesson in adaptability.
+                      It's not just about coding; it's about crafting efficient systems, understanding user needs,
+                      and applying design patterns to build robust applications. Every challenge is an opportunity to learn,
+                       making the full-stack development experience a dynamic and enriching journey.
+                </p>
 
                 <a href="#" class="blog-card-link">Read more <i class="ti-angle-double-right"></i></a>
             </div>

@@ -29,21 +29,23 @@ class ProjectResource extends Resource
                 Forms\Components\Section::make('Category Section')
                 ->description('Select the project category .')
                 ->schema([
-                    Forms\Components\TextInput::make('Category')
+                    Forms\Components\TextInput::make('category_id')
                     ->required()
                     ->numeric(),
                 ]),
                 Forms\Components\Section::make('Project Info')
                 ->description('Put all project info in.')
                 ->schema([
-                    Forms\Components\TextInput::make('Name')
+                    Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
-                    Forms\Components\TextInput::make('Url')
+                    Forms\Components\TextInput::make('url')
                         ->required()
                         ->maxLength(255),
-                    Forms\Components\FileUpload::make('Image')
+                    Forms\Components\FileUpload::make('image')
                         ->image()
+                        ->directory('project_images')
+                        ->storeFileNamesIn('original_filename')
                         ->required()
                         ->columnSpanFull(),
                 ]),
@@ -63,6 +65,7 @@ class ProjectResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('url')
                     ->searchable(),
+                    Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
